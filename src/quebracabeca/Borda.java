@@ -27,8 +27,8 @@ public class Borda {
         return tamanhoborda;
     }
     public int[][] Bvevaziocheio(){
-        tamanhoborda[1][3] = 0; 
-        tamanhoborda[2][3] = 1; 
+        tamanhoborda[1][0] = 0; 
+        tamanhoborda[2][0] = 1; 
         return tamanhoborda;
     }
     

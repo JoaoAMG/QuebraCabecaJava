@@ -6,9 +6,8 @@ public class Peca {
     PecaCentral pecacentral = new PecaCentral();
     Borda borda = new Borda();  
 
-    public Peca(PecaCentral pecacentral,Borda borda) {
-        this.pecacentral = pecacentral;
-        this.borda = borda;
+    public Peca() {
+        
     }
 
     public int[][] getTamanhogeral() {
@@ -37,6 +36,14 @@ public class Peca {
     
     
     public int[][] comporPeca(){
+        
+        int[][] centralaux = pecacentral.getCorpo();
+        for(int i=0; i<tamanhogeral.length; i++){
+        for(int j=0; j<tamanhogeral[0].length; j++){
+          if(tamanhogeral[i][j] == 0)
+                tamanhogeral[i][j] = centralaux[i][j];
+        }
+        }
         int[][] bordaaux = borda.getTamanhoborda();
         for(int i=0; i<tamanhogeral.length; i++){
         for(int j=0; j<tamanhogeral[0].length; j++){
