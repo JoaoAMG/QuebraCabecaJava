@@ -59,9 +59,31 @@ public class QuebraCabeca {
         peca9.borda.Bhbfull();
         peca9.borda.Bvdfull();
         
+        Tabuleiro tabuleiro = new Tabuleiro();
         
+        tabuleiro.adicionaraotabuleiro(peca1);
+        tabuleiro.adicionaraotabuleiro(peca2);
+        tabuleiro.adicionaraotabuleiro(peca3);
+        tabuleiro.adicionaraotabuleiro(peca4);
+        tabuleiro.adicionaraotabuleiro(peca5);
+        tabuleiro.adicionaraotabuleiro(peca6);
+        tabuleiro.adicionaraotabuleiro(peca7);
+        tabuleiro.adicionaraotabuleiro(peca8);
+        tabuleiro.adicionaraotabuleiro(peca9);
+        
+        int[][] listaaux = tabuleiro.getTamanho();
+        
+        for(int i=0; i<listaaux.length; i++){
+            
+        for(int j=0; j<listaaux.length; j++){
+            System.out.println(listaaux[ i ][ j ]);
+        }
+            System.out.println("\n");
+        }
         
         }
+    
+  
         
         
 

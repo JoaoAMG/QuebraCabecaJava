@@ -6,8 +6,8 @@ public class Tabuleiro {
     private int[][] tamanho = new int[9][9]; 
 
 
-    public Tabuleiro(int[][] tamanho){
-        this.tamanho = tamanho;
+    public Tabuleiro(){
+        
     }
 
     public int[][] getTamanho() {
@@ -18,7 +18,7 @@ public class Tabuleiro {
         this.tamanho = tamanho;
     }
     
-    private int[][] adicionaraotabuleiro(Peca p){
+    public int[][] adicionaraotabuleiro(Peca p){
             int[][] pedidoaux = p.getTamanhogeral();
             int i , j  , auxi = 0, auxj = 0;
             for( i=auxi; i<tamanho.length; i++){
